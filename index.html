@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +13,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+    <!-- Font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <!-- Styles -->
     <style>
-        *{
+        * {
             font-family: 'Poppins', sans-serif;
         }
     </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primery: '#B68C5A',
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
-<body>
-    
+
+<body class="bg-white">
+    <header class="container mx-auto flex justify-between items-center py-8">
+        <div class="">
+            <img src="images/logo2.png" alt="">
+        </div>
+        <div class="nav color-primery">
+            <ul class="flex gap-4 lg:gap-8">
+                <li><a href="">Home </a></li>
+                <li><a href="">Services <i class="fa-solid fa-chevron-right ml-1"></i></a></li>
+                <li><a href="">Cases <i class="fa-solid fa-chevron-right ml-1"></i></a></li>
+                <li><a href="">Blog <i class="fa-solid fa-chevron-right ml-1"></i></a></li>
+                <li><a href="">Contuct Us <i class="fa-solid fa-chevron-right ml-1"></i></a></li>
+            </ul>
+        </div>
+        <div class="">
+            <button class="btn bg-primery border-0 text-white px-8">Free Consultation</button>
+        </div>
+    </header>
 </body>
+
 </html>
